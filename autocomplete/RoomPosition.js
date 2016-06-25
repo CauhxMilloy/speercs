@@ -10,9 +10,7 @@
  * @class
  * @constructor
  */
-RoomPosition = function(x, y, roomName) { };
-
-RoomPosition.prototype =
+var RoomPosition =
 {
     /**
      * The name of the room.

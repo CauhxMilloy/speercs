@@ -5,16 +5,14 @@
  *
  * @class
  */
-Room = function() { };
-
-Room.prototype =
+var Room =
 {
     /**
      * The Controller structure of this room, if present, otherwise undefined.
      *
      * @type {undefined|StructureController}
      */
-    controller: null,
+    controller: StructureController,
 
     /**
      * Total amount of energy available in all spawns and extensions in the room.

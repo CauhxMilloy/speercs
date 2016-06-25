@@ -3,16 +3,14 @@
  * Almost all game objects prototypes are derived from RoomObject.
  * @class
  */
-RoomObject = function() { };
-
-RoomObject.prototype =
+var RoomObject =
 {
     /**
      * An object representing the position of this object in the room.
      *
      * @type {RoomPosition}
      */
-    pos: null,
+    pos: RoomPosition,
 
     /**
      * The link to the Room object.
@@ -20,5 +18,5 @@ RoomObject.prototype =
      *
      * @type {Room}
      */
-    room: null
+    room: Room
 };

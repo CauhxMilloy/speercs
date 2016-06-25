@@ -6,17 +6,7 @@
  * @class
  * @extends {OwnedStructure}
  */
-StructureSpawn = function() { };
-
-/**
- *
- * @class
- * @extends {OwnedStructure}
- */
-Spawn = StructureSpawn;
-Spawn.prototype = StructureSpawn.prototype;
-
-StructureSpawn.prototype =
+var StructureSpawn =
 {
     /**
      * The amount of energy containing in the spawn.
@@ -122,3 +112,10 @@ StructureSpawn.prototype =
      */
     transferEnergy: function(target, amount) { }
 };
+
+/**
+ *
+ * @class
+ * @extends {OwnedStructure}
+ */
+var Spawn = StructureSpawn;

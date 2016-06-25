@@ -3,10 +3,9 @@
  * @class
  * @extends {RoomObject}
  */
-Creep = function() { };
-
-Creep.prototype =
+var Creep =
 {
+    prototype: RoomObject,
     /**
      * An array describing the creep’s body
      *

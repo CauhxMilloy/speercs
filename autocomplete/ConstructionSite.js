@@ -6,9 +6,7 @@
  * @class
  * @extends {RoomObject}
  */
-ConstructionSite = function() { };
-
-ConstructionSite.prototype =
+var ConstructionSite =
 {
     /**
      * A unique object identificator.
