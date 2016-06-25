@@ -3,9 +3,7 @@
  *
  * @class
  */
-RawMemory = function() { };
-
-RawMemory.prototype =
+var RawMemory =
 {
     /**
      * Get a raw string representation of the Memory object.

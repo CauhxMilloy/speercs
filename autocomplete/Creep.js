@@ -431,5 +431,26 @@ var Creep =
      *
      * @return {number|OK|ERR_NOT_OWNER|ERR_BUSY|ERR_NOT_ENOUGH_RESOURCES|ERR_INVALID_TARGET|ERR_NOT_IN_RANGE|ERR_NO_BODYPART}
      */
-    upgradeController: function(target) { }
+    upgradeController: function(target) { },
+
+
+    ////////////////////////////////
+    /// Base Class Shits
+    ////////
+
+    
+    /**
+     * An object representing the position of this object in the room.
+     *
+     * @type {RoomPosition}
+     */
+    pos: RoomPosition,
+
+    /**
+     * The link to the Room object.
+     * May be undefined in case if an object is a flag and is placed in a room that is not visible to you.
+     *
+     * @type {Room}
+     */
+    room: Room
 };

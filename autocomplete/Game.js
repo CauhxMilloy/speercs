@@ -3,7 +3,7 @@
  *
  * @class
  */
-Game =
+var Game =
 {
     /**
      * An object containing information about your CPU usage
@@ -48,14 +48,14 @@ Game =
      *
      * @type {Array<string, Creep>}
      */
-    creeps: {},
+    creeps: [Creep],
 
     /**
      * A hash containing all your flags with flag names as hash keys.
      *
      * @type {Array<string, Flag>}
      */
-    flags: {},
+    flags: [Flag],
 
     /**
      * Your Global Control Level
@@ -89,35 +89,35 @@ Game =
      *
      * @type {Map}
      */
-    map: null,
+    map: Map,
 
     /**
      * A global object representing the in-game market.
      *
      * @type {Market}
      */
-    market: null,
+    market: Market,
 
     /**
      * A hash containing all the rooms available to you with room names as hash keys.
      *
      * @type {Array<string, Room>}
      */
-    rooms: {},
+    rooms: [Room],
 
     /**
      * A hash containing all your spawns with spawn names as hash keys.
      *
      * @type {Array<string, Spawn>}
      */
-    spawns: {},
+    spawns: [Spawn],
 
     /**
      * A hash containing all your structures with structure id as hash keys.
      *
      * @type {Array<string, Structure>}
      */
-    structures: {},
+    structures: [Structure],
 
     /**
      * System game tick counter. It is automatically incremented on every tick.

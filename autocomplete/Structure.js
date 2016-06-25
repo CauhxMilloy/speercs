@@ -3,9 +3,8 @@
  * @class
  * @extends {RoomObject}
  */
-var Structure = Object.create(RoomObject.prototype);
-
-var butts={
+var Structure =
+{
     /**
      * The current amount of hit points of the structure.
      *

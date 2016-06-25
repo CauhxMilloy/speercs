@@ -5,9 +5,7 @@
  *
  * @class
  */
-Map = function() { };
-
-Map.prototype =
+var Map =
 {
     /**
      * List all exits available from the room with the given name.

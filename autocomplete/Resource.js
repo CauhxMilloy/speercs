@@ -6,9 +6,7 @@
  * @class
  * @extends {RoomObject}
  */
-Resource = function() { };
-
-Resource.prototype =
+var Resource =
 {
     /**
      * The amount of resource units containing.
@@ -30,5 +28,26 @@ Resource.prototype =
      *
      * @type {string}
      */
-    resourceType: ""
+    resourceType: "",
+
+
+    ////////////////////////////////
+    /// Base Class Shits
+    ////////
+
+    
+    /**
+     * An object representing the position of this object in the room.
+     *
+     * @type {RoomPosition}
+     */
+    pos: RoomPosition,
+
+    /**
+     * The link to the Room object.
+     * May be undefined in case if an object is a flag and is placed in a room that is not visible to you.
+     *
+     * @type {Room}
+     */
+    room: Room
 };

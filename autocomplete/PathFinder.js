@@ -2,9 +2,7 @@
  *
  * @class
  */
-PathFinder = function() { };
-
-PathFinder.prototype =
+var PathFinder =
 {
     /**
      * Find an optimal path between origin and goal.

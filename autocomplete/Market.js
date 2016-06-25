@@ -5,9 +5,7 @@
  *
  * @class
  */
-Market = function() { };
-
-Market.prototype =
+var Market =
 {
     /**
      * An array of the last 100 incoming transactions to your terminals with the following format:

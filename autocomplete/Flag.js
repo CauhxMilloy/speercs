@@ -6,9 +6,7 @@
  * @class
  * @extends {RoomObject}
  */
-Flag = function() { };
-
-Flag.prototype =
+var Flag =
 {
     /**
      * Flag primary color. One of the COLOR_* constants.
@@ -75,5 +73,26 @@ Flag.prototype =
      *
      * @return {number|OK|ERR_INVALID_TARGET}
      */
-    setPosition: function(x, y) { }
+    setPosition: function(x, y) { },
+
+
+    ////////////////////////////////
+    /// Base Class Shits
+    ////////
+
+    
+    /**
+     * An object representing the position of this object in the room.
+     *
+     * @type {RoomPosition}
+     */
+    pos: RoomPosition,
+
+    /**
+     * The link to the Room object.
+     * May be undefined in case if an object is a flag and is placed in a room that is not visible to you.
+     *
+     * @type {Room}
+     */
+    room: Room
 };

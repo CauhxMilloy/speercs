@@ -61,5 +61,26 @@ var ConstructionSite =
      *
      * @return {number|OK|ERR_NOT_OWNER}
      */
-    remove: function() { }
+    remove: function() { },
+
+
+    ////////////////////////////////
+    /// Base Class Shits
+    ////////
+
+    
+    /**
+     * An object representing the position of this object in the room.
+     *
+     * @type {RoomPosition}
+     */
+    pos: RoomPosition,
+
+    /**
+     * The link to the Room object.
+     * May be undefined in case if an object is a flag and is placed in a room that is not visible to you.
+     *
+     * @type {Room}
+     */
+    room: Room
 };

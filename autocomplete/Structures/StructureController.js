@@ -59,13 +59,34 @@ var StructureController =
      * @return {number|OK|ERR_NOT_OWNER}
      */
     unclaim: function() { },
-
+    
     
     ////////////////////////////////
     /// Base Class Shits
     ////////
 
+    /**
+     * Whether this is your own structure.
+     *
+     * @type {boolean}
+     */
+    my: true,
 
+    /**
+     * An object with the structure’s owner info
+     *
+     * @type {{username: string}}
+     */
+    owner:
+    {
+        username: ""
+    },
+    
+    
+    ////////////////////////////////
+    /// Base Class Shits
+    ////////
+    
     /**
      * The current amount of hit points of the structure.
      *
