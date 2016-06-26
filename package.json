@@ -11,6 +11,6 @@
   "scripts": {
     "test": "test"
   },
-  "author": "Paul Conner, Brandon Risberg, Jinson Yu",
+  "author": "Paul Conner",
   "license": "MIT"
 }
